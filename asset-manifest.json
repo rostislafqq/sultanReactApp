@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/sultanReactApp/static/css/main.5856e6d7.css",
+    "main.js": "/sultanReactApp/static/js/main.801ff083.js",
+    "static/media/loading.gif": "/sultanReactApp/static/media/loading.f62031aeaa49e1b31024.gif",
+    "static/media/photo.png": "/sultanReactApp/static/media/photo.c4eafdc98e1740a837dd.png",
+    "static/media/logo.svg": "/sultanReactApp/static/media/logo.a343d61ad3a6eee2de8394ac58dc907d.svg",
+    "static/media/logoWhite.svg": "/sultanReactApp/static/media/logoWhite.98ae7cae2b4961914a7b26a7a28fc32d.svg",
+    "static/media/whats.svg": "/sultanReactApp/static/media/whats.db4fdea63d5ac10f8039908e900cc30f.svg",
+    "static/media/cartWhite.svg": "/sultanReactApp/static/media/cartWhite.a01cc6d208c6df982a93cbd6d28e73e7.svg",
+    "static/media/cart.svg": "/sultanReactApp/static/media/cart.a5d100d0100f4885c179d9d923ea75eb.svg",
+    "static/media/money.svg": "/sultanReactApp/static/media/money.8735fdb1aad9c0d7deb74aaa0afef6b0.svg",
+    "static/media/bin.svg": "/sultanReactApp/static/media/bin.52dd0ca00a7578f6d0c562e69a5e8080.svg",
+    "static/media/telegram.svg": "/sultanReactApp/static/media/telegram.3ada9ee376749e51c5538dc5377625b7.svg",
+    "static/media/car.svg": "/sultanReactApp/static/media/car.6534f2d8c34f513ee5629dc9fadd550f.svg",
+    "static/media/x.svg": "/sultanReactApp/static/media/x.89b5267c6ed8636e6746a8d636ed5855.svg",
+    "static/media/email.svg": "/sultanReactApp/static/media/email.3e3846c4f8765fe5313a394940923dde.svg",
+    "static/media/bottle.svg": "/sultanReactApp/static/media/bottle.8954951c94a03caba659a0160febe828.svg",
+    "static/media/box.svg": "/sultanReactApp/static/media/box.16318598fb0d18ca14637ccdf28201f7.svg",
+    "static/media/pencil.svg": "/sultanReactApp/static/media/pencil.297b53f11854546424693a2a18b3353f.svg",
+    "index.html": "/sultanReactApp/index.html",
+    "static/media/point.svg": "/sultanReactApp/static/media/point.ac8d5a925aa65f28f8c1f78a97674963.svg",
+    "static/media/blackSQ.svg": "/sultanReactApp/static/media/blackSQ.1928cbd9b07950bf3fa58978c02fd5d0.svg",
+    "static/media/sq.svg": "/sultanReactApp/static/media/sq.4756189f8fb2f4cdf0b38c581c7033d8.svg",
+    "static/media/qw.svg": "/sultanReactApp/static/media/qw.a4c9f7f049b3e90b3b16a860866c94fb.svg",
+    "static/media/linsBlack.svg": "/sultanReactApp/static/media/linsBlack.ae27b3063e1fa019fb33934605e204ac.svg",
+    "static/media/search.svg": "/sultanReactApp/static/media/search.dc220b85ec983988f6f2629d99ba20b8.svg",
+    "static/media/accept.svg": "/sultanReactApp/static/media/accept.8db53738ab6acac6c1ebf02c16900b34.svg",
+    "static/media/burger.svg": "/sultanReactApp/static/media/burger.abfea8252c976cf247af0ded9e0deb82.svg",
+    "static/media/download.svg": "/sultanReactApp/static/media/download.5e96ff0389bda2c469106116f0a58afd.svg",
+    "static/media/pagArrow.svg": "/sultanReactApp/static/media/pagArrow.8009929457bde0328f8f182170fd2c0f.svg",
+    "static/media/arrowWhite.svg": "/sultanReactApp/static/media/arrowWhite.35ab94e2f8817f324bd31c2293385fa8.svg",
+    "static/media/arrow.svg": "/sultanReactApp/static/media/arrow.260e242d67fc23d29ab014c3406116d8.svg",
+    "static/media/arrowAdaptive.svg": "/sultanReactApp/static/media/arrowAdaptive.90a0847e2609fe35eb180fd09df108b9.svg",
+    "main.5856e6d7.css.map": "/sultanReactApp/static/css/main.5856e6d7.css.map",
+    "main.801ff083.js.map": "/sultanReactApp/static/js/main.801ff083.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5856e6d7.css",
+    "static/js/main.801ff083.js"
+  ]
+}
