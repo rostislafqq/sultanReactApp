@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    .accept{
+        display: none;
+    }
+}
+
+@media(max-width:1242px){
+    .container{
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+@media(max-width:513px){
+    .container{
+        .accept{
+            display: block;
+            padding: 31px 61px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            background: #FFC85E;
+            border-radius: 79px;
+        }
+    }
+}

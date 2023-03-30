@@ -1,0 +1,140 @@
+.loading{
+    width: 100%;
+}
+
+@mixin commonTitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #3F4E65;
+}
+@mixin commonName{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #111111;
+}
+.card:hover{
+    transition: .3s;
+    box-shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.2);
+}
+.card{
+    box-shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    width: 326px;
+    padding: 0px 21px 29px 23px;
+    .mainIMG{
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    .size{
+        margin-left: 8px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        color: #3F4E65;
+    }
+    .cardName{
+        margin-top: 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #111111;
+    }
+    .barcode{
+        margin-top: 20px;
+        @include commonTitle()
+    }
+    .barcodeNum{
+        @include commonName()
+    }
+    .manuf{
+        margin-top: 5px;
+        @include commonTitle()
+    }
+    .manufName{
+        @include commonName()
+    }
+    .brand{
+        margin-top: 5px;
+        @include commonTitle()
+    }
+    .brandName{
+        @include commonName()
+    }
+    .buy{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        .cost{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 130%;
+            color: #111111;
+            margin-right: 40px;
+        }
+        .costBtn:hover{
+            transition: .3s;
+            background: #6DAEEA;
+        }
+        .costBtn{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.15em;
+            color: #FFFFFF;
+            padding: 16px 25px;
+            background-color: #FFC85E;
+            display: flex;
+            align-items: center;
+            border-radius: 80px;
+            img{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.container{
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.none{
+    display: none;
+}
+
+
+
+@media(max-width:1058px){
+    .container{
+        margin-left: 10px;
+        justify-content: center;
+    }
+    
+}
+
+@media(max-width:650px){
+    .container{
+        margin-left: 0px;
+        justify-content: start;
+    }
+    .card{
+        width: 290px;
+    }
+}

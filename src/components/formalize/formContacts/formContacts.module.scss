@@ -1,0 +1,83 @@
+.container{
+    .commonCirHed:not(:first-child){
+        margin-top: 35px;
+    }
+    .commonCirHed{
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+        
+        .circle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            text-align: center;
+            color: #3F4E65;
+            padding: 8.5px 14px;
+            background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .circleSpan{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            text-transform: uppercase;
+            color: #111111;
+        }
+    }
+    .commonForm:not(:first-child){
+        margin-top: 15px;
+    }
+    .commonForm{
+        .commonHeader{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: #111111;
+        }
+        .commonInput{
+            margin-top: 10px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: rgba(92, 99, 112,0.6);
+            padding: 13px 30px;
+            background: #EDEDED;
+            border-radius: 36px;
+        }
+    }
+    .submit{
+        background: #FFC85E;
+        border-radius: 79px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        width: 90%;
+        padding: 20px 0;
+        margin-top: 60px;
+    }
+    .submit:hover{
+        transition: .3s;
+        background-color: #6DAEEA;;
+    }
+}
+
+@media(max-width:513px){
+    .container{
+         .submit{
+            display: none;
+         }
+    }
+}

@@ -1,0 +1,44 @@
+.container{
+    margin-top: 45px;
+    .nav{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 120%;
+        color: #3F4E65;
+        .active{
+            opacity: 0.5;
+            padding-left: 10px;
+        }
+        a:not(:last-child){
+            border-right: 1px dashed rgba(63, 78, 101,0.3);
+            padding-right: 10px;
+        }
+
+    }
+    .header{
+        margin-top: 50px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #111111;
+        padding-bottom: 50px;
+        border-bottom: 1px dashed rgba(63, 78, 101,0.3);
+    }
+}
+
+@media(max-width:450px){
+    .container{
+        .header{
+            padding-bottom: 20px;
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+  
+}

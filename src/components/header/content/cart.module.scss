@@ -1,0 +1,92 @@
+.cartItem{
+    position: relative;
+    display: flex;
+    .count{
+        position: absolute;
+        left: 30px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #FFC85E;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        padding-top: 2px;
+    }
+    .count:hover{
+        transition: .3s;
+        background: #6DAEEA;
+    }
+    .cartInfo{
+        margin-left: 14px;
+        .cartName{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 150%;
+            color: #3F4E65;
+        }
+        .cartCost{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 150%;
+            color: #111111;
+        }
+    }
+}
+ 
+
+ .burger{
+    display: none;
+    background: #FFC85E;
+    width: fit-content;
+    border-radius: 50%;
+    img{
+        padding: 10px;
+    }
+ }
+ .logo{
+    display: none;
+ }
+
+ @media(max-width:780px){
+    .cart{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom:1px solid rgba(63, 78, 101,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            display: block;
+            width: 97px;
+        }
+        .cartImg{
+            width: 32px;
+        }
+        .cartInfo{
+            display: none
+           }
+        .count{
+            font-size: 10px;
+            line-height: 12px;
+            width: 17px;
+            height: 17px;
+            left: 20px;
+        }
+    }
+   
+ }
+
+ @media(max-width:650px){
+    .burger{
+        display: block;
+    }
+ }

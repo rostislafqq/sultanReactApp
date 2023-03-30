@@ -1,0 +1,23 @@
+.text{
+    margin-left: 50px;
+    margin-right: 114px;
+    margin-top: 68px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #3F4E65;
+    padding-bottom: 203px;
+}
+.none{
+    display: none;
+}
+@media(max-width:1300px){
+    .text{
+        margin-top: 35px;
+        padding-bottom: 50px;
+        margin-right: 20px;
+    }
+}
+ 

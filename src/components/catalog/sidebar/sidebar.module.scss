@@ -1,0 +1,174 @@
+.sidebar{
+    width: fit-content;
+    .header{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #111111;
+        margin-bottom: 10px;
+    }
+    .cost{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        color: #3F4E65;
+        margin-right: 5px;
+    }
+    .val{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: #111111;
+    }
+    .costContainer{
+        margin-top: 16px;
+        .costInput{
+            background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+            border-radius: 1000px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            color: #3F4E65;
+            padding: 4px;
+            text-align: center;
+            width: 100px;
+        }
+        .dash{
+            margin: 0 10px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            color: #3F4E65;
+        }
+    }
+    .manuf{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #111111;
+        margin-top: 30px;
+    }
+    .lins{
+        margin-top: 15px;
+        position: relative;
+        .manufInput{
+            align-items: center;
+            padding: 13px 10px 13px 20px;
+            gap: 10px;
+            background: #EDEDED;
+            border-radius: 36px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: #5C6370;
+            opacity: 0.6;
+            width: 240px;
+        }
+        img{
+            position: absolute;
+            background-color: #FFC85E;
+            padding: 10px;
+            border-radius: 50%;
+            right: 10px;
+            top: 3px;
+        }
+        img:hover{
+          transition: .3s;
+          background: #6DAEEA;
+        }
+    }
+    .manufCheckContainer{
+        margin-top: 15px;
+        input{
+            width: 10px;
+            height: 10px;
+        }
+        label{    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #3F4E65;
+        margin-left: 10px;
+        }
+    }
+    .showContainer{
+        margin-top: 25px;
+        .show{
+           
+            background: #FFC85E;
+            border-radius: 79px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding: 20px 50px;
+        }
+        .show:hover{
+          transition: .3s;
+          background: #6DAEEA;
+        }
+        .bin{
+            padding: 17px;
+            background: #FFC85E;
+            border-radius: 50%;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .bin:hover{
+            transition: .3s;
+            background: #6DAEEA;
+        }
+    }
+    .sidebarChose{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px dashed rgba(63, 78, 101,0.3);
+        cursor: pointer;
+        .sidebarChoseHeader{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            text-transform: uppercase;
+            color: #111111;
+        }
+        .sidebarChoseItems{
+            padding-top: 5px;
+            .sidebarChoseItem{
+                margin-top: 10px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #3F4E65;
+            }
+        }
+    }
+}
+
+
+.none{
+    display: none;
+}
+
+

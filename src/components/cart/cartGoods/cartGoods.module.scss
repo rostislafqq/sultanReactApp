@@ -1,0 +1,178 @@
+.container{
+    padding: 50px 0;
+    border-bottom: 1px dashed rgba(63, 78, 101,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .imgContainer{
+        width: 281px;
+        height: 191px;
+        img{
+            width: 281px;
+            height: 191px;
+        }
+    }
+    .introContainer{
+        display: flex;
+        justify-content: space-between;
+        .tovarInfo{
+            max-width: 480px;
+            .size{
+                span{
+                    margin-left: 8px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 130%;
+                    color: #3F4E65
+                }
+            }
+            .name{
+                margin-top: 10px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                color: #111111
+            }
+            .info{
+                font-family: 'Inter';
+                margin-top: 10px;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 150%;
+                color: #3F4E65
+            }
+        }
+        .buy{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10px;
+            .countContainer{
+                padding:0 40px;
+                border-left: 1px dashed rgba(63, 78, 101,0.3);
+                
+                display: flex;
+                align-items: center;
+                .btn{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #3F4E65;
+                    padding: 4px 14px;
+                    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+                    border-radius: 1000px;
+                }
+                .btn:hover{
+                    transition: .3s;
+                    background-color: #6DAEEA;;
+                }
+                .count{
+                    padding: 0 20px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 130%;
+                    color: #3F4E65;
+                }
+            }
+            .cost{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 130%;
+                color: #111111;
+                padding: 0 40px;
+                border-left: 1px dashed rgba(63, 78, 101,0.3);
+                border-right: 1px dashed rgba(63, 78, 101,0.3);
+            }
+            .bin{
+                padding: 10px 10px;
+                background: #FFC85E;
+                border-radius: 50%;
+                margin-left: 40px;
+                cursor: pointer;
+            }
+            .bin:hover{
+                background-color: #6DAEEA;; 
+            }
+        }
+    }
+}
+
+.footerLink{
+    display: block;
+    width: fit-content;
+    margin: 50px 0px 100px 0;
+    background: #FFC85E;
+    border-radius: 79px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 21px 38px;
+}
+.footerLink:hover{
+    transition: .3s;
+    background-color: #6DAEEA;;
+}
+.empty{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+@media(max-width:984px){
+    .container{
+        .introContainer{
+            flex-direction: column;
+            margin-left: 0;
+            .buy{ 
+                margin-top: 20px;
+                margin-left: 0 ;
+                 .countContainer{
+                     padding-left: 0  ;
+                     border-left: none ;
+                     padding-right: 0;
+            }
+            .cost{
+                padding-left: 15px;
+                padding-right: 15px;
+
+            }
+            .bin{
+                margin-left: 0;
+            }
+        }
+        }
+    }
+  
+}
+
+@media(max-width:450px){
+    .container{
+        .introContainer{
+            .tovarInfo{
+                .name{
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+            }
+
+        }
+    }
+  
+}
+
+

@@ -1,0 +1,128 @@
+.container{
+    padding: 38px 21px;
+    padding-right: 16px;
+    padding-top: 60px;
+    width: fit-content;
+    box-shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    .header{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        color: #111111;
+    }
+    ::-webkit-scrollbar {
+        width: 4px;
+        background-color: rgba(255, 200, 94,0.1);
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        width: 6px;
+        border-radius: 2px;
+        background: #FFC85E;
+      }
+      
+      ::-webkit-scrollbar-track {
+        border-radius: 2px;
+        background-color: rgba(255, 200, 94,0.1);
+      }
+    .scrollBar{
+        height: 550px;
+        overflow-y: scroll;
+        margin-top: 30px;
+        .card:not(:last-child){
+            border-bottom: 1px dashed rgba(63, 78, 101,0.3);
+        }
+        .card{
+            max-width: 500px;
+            padding-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                display: block;
+                max-width: 200px;
+            }
+            .info{
+                .cardHeader{
+                    display: flex;
+                    align-items: center;
+                    .size{
+                        margin-left: 8px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 130%;
+                        color: #3F4E65;
+                    }
+                }
+            }
+            .cardName{
+                margin-top: 9px;  
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #111111
+            }
+            .cost{
+                margin-top: 15px;      
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 130%;
+                color: #111111;
+            }
+        }
+    }
+    .footer{
+        padding-top: 20px;
+        margin-bottom: 40px;
+        border-top: 1px dashed rgba(63, 78, 101,0.3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .result{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 120%;
+            color: #111111;
+        }
+    }
+    .link{
+        display: block;
+        width: fit-content;
+        background: #FFC85E;
+        border-radius: 79px;
+        padding: 21px 29px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+       .pencil{
+        margin-left: 12px;
+       } 
+    }
+    .link:hover{
+        transition: .3s;
+        background-color: #6DAEEA;;
+    }
+}
+
+
+@media(max-width:513px){
+    .container{
+        .scrollBar{
+             display: none;
+        }
+    }
+}

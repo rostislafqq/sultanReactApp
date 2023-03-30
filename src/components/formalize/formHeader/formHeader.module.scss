@@ -1,0 +1,40 @@
+.container{
+    margin-top: 45px;
+    .nav{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 120%;
+        color: #3F4E65;
+        a:not(:first-child){
+            padding-left: 10px;
+            border-left: 1px dashed rgba(63, 78, 101,0.3);
+        }
+        a:not(:last-child){
+            padding-right: 10px;
+        }
+        .active{
+            color:rgba(63, 78, 101,0.5) ;
+        }
+    }
+    .header{
+        margin-top: 50px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #111111;
+    }
+}
+
+
+@media(max-width:513px){
+    .container{
+        .header{
+            font-size: 20px;
+        }
+    }
+}

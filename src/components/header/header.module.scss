@@ -1,0 +1,23 @@
+$bor :1px solid rgba(63, 78, 101,0.2);
+.info{
+    padding: 3px 14%;
+    display: flex;
+    align-items: center;
+    border-top: $bor;
+    border-bottom:  $bor;
+    justify-content: space-between;
+    padding-top: 0;
+}
+@media(max-width:1800px){
+    .info{
+    padding: 3px 5%;}
+}
+
+@media(max-width:780px){
+    .info{
+        flex-direction: column-reverse;
+        align-items: stretch;
+        border-bottom:1px solid rgba(63, 78, 101,0.1);
+    }
+    
+}

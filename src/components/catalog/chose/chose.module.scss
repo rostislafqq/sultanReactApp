@@ -1,0 +1,35 @@
+.container{
+    margin-top: 25px;
+    display: flex;
+    .item{
+        padding: 18px;
+        box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.1);
+        border-radius: 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        padding: 18px 15px;
+        color: #3F4E65;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .active{
+        color:#FFC85E
+    }
+}
+
+@media(max-width:1300px){
+    .container{
+        overflow-x: scroll;
+    }
+}
+ 
+
+@media(max-width:650px){
+    .container{
+       display: none;
+    }
+}

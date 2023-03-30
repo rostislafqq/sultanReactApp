@@ -1,0 +1,170 @@
+.footer{
+    padding: 71px 14% 116px 14%;
+    background: #3F4E65;
+    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04);
+    display: flex;
+    justify-content: space-between;
+    .company{
+        .compIntro{
+            max-width: 320px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFFFFF;
+            margin-top: 15px;
+            margin-bottom: 45px;
+        }
+        .subText{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: #FFFFFF;
+            margin-bottom: 14px;
+        }
+        .subs{
+            position: relative;
+            .typeEM{
+                border-radius: 36px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 150%;
+                color: #5C6370;
+                padding: 13px 10px 13px 20px;
+                width: 80%;
+                background-color: white;
+            }
+            img{
+                position: absolute;
+                background: #FFC85E;
+                border-radius: 50%;
+                padding: 12px 15px;
+                width: 39px;
+                height: 39px;
+                right: 23%;
+                top: 2px;
+            }
+        }   
+    }
+    .pricelist{
+        .download{
+            padding: 21px 50px;
+            background: #FFC85E;
+            border-radius: 79px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+        .contact{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+        }
+        .whats{
+            margin-right: 10px;
+        }
+    }
+    .contactUs{
+        .number{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 150%;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+        }
+        .time{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 150%;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+        }
+        .call{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 150%;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+            margin-bottom: 25px;
+        }
+        .email{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: #FFFFFF;
+        }
+        .common{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 130.02%;
+            color: #FFFFFF;
+            margin-bottom: 25px;
+        }
+        .cards{
+           img{
+            border-radius: 5px;
+           }
+           .visa{
+            margin-right: 5px;
+           } 
+        }
+    }
+}
+.commonHeader{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.commonText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+@media(max-width:1470px){
+    .footer{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media(max-width:1226px){
+    .footer{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:918px){
+    .footer{
+        padding: 15px;
+    }
+}
