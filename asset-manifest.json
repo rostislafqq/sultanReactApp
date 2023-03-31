@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sultanReactApp/static/css/main.5856e6d7.css",
-    "main.js": "/sultanReactApp/static/js/main.f528b142.js",
+    "main.js": "/sultanReactApp/static/js/main.ff870678.js",
     "static/media/loading.gif": "/sultanReactApp/static/media/loading.f62031aeaa49e1b31024.gif",
     "static/media/photo.png": "/sultanReactApp/static/media/photo.c4eafdc98e1740a837dd.png",
     "static/media/logo.svg": "/sultanReactApp/static/media/logo.a343d61ad3a6eee2de8394ac58dc907d.svg",
@@ -33,10 +33,10 @@
     "static/media/arrow.svg": "/sultanReactApp/static/media/arrow.260e242d67fc23d29ab014c3406116d8.svg",
     "static/media/arrowAdaptive.svg": "/sultanReactApp/static/media/arrowAdaptive.90a0847e2609fe35eb180fd09df108b9.svg",
     "main.5856e6d7.css.map": "/sultanReactApp/static/css/main.5856e6d7.css.map",
-    "main.f528b142.js.map": "/sultanReactApp/static/js/main.f528b142.js.map"
+    "main.ff870678.js.map": "/sultanReactApp/static/js/main.ff870678.js.map"
   },
   "entrypoints": [
     "static/css/main.5856e6d7.css",
-    "static/js/main.f528b142.js"
+    "static/js/main.ff870678.js"
   ]
 }
