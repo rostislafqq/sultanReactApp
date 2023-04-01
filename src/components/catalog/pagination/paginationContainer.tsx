@@ -12,6 +12,7 @@ const PaginationContainer =() =>{
     const dispatch = useDispatch()
     const paginationLength=useSelector((state:RootState) => state.cards.paginationLength)
     const paginationActive = useSelector((state:RootState)=>state.cards.paginationActive)
+    const pagMaxLength = useSelector((state:RootState)=>state.cards.pagMaxLength)
 
     //устанавливаем кол-во цифр пагинации
     useEffect(()=>{
@@ -31,7 +32,7 @@ const PaginationContainer =() =>{
             }} className={s.left} src={arrow} alt="arrow" /></li>
             {paginationNums.map((v)=><Pagination key={v} dispatch={dispatch} paginationActive={paginationActive} num={v}/>)}
             <li ><img onClick={()=>{
-                dispatch(setPaginationActive(paginationActive===Math.ceil(paginationLength/15)?paginationActive:paginationActive+1 ))
+                dispatch(setPaginationActive(paginationActive>=Math.ceil(pagMaxLength/15)?paginationActive:paginationActive+1 ))
             }} className={s.right} src={arrow} alt="arrow" /></li>
         </ul>
     )

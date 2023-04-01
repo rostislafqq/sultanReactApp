@@ -4,16 +4,20 @@ import box from '../../../assets/box.svg'
 import bin from '../../../assets/bin.svg'
 import { useDispatch } from 'react-redux'
 import { deliteItem, plusCount, removeCount, setTotalCost } from '../../../store/Slices/cart'
+import { Link } from 'react-router-dom'
 
 const CartGoods:React.FC<ICardsCart> = ({barcode,img,size,sizeType,name,intro,count,cost})=>{
     const dispatch = useDispatch()
 
     return(
         <>
+        
         <div className={s.container}>
+        <Link to={`/sultanReactApp/catalog/${barcode}`}  >
             <div className={s.imgContainer}>
                 <img src={img} alt="tovar" />
             </div>
+        </Link>
             <div className={s.introContainer}>
                 <div className={s.tovarInfo}>
                     <div className={s.size}>
@@ -45,7 +49,7 @@ const CartGoods:React.FC<ICardsCart> = ({barcode,img,size,sizeType,name,intro,co
                 </div>
             </div>
         </div>
-        
+       
         </>
     )
 }

@@ -18,10 +18,10 @@ const CartItem:React.FC<PropsCartItem> = ({toggleBurger,cost,count}) =>{
             }}>
              <img className={s.burgerIMG} src={burger} alt="burger" />
             </div>
-            <Link to='/catalog'>
+            <Link to='/sultanReactApp/catalog'>
             <img className={s.logo} src={logo} alt="logo" />
             </Link>
-            <Link className={s.cartItem} to='/cart'>
+            <Link className={s.cartItem} to='/sultanReactApp/cart'>
                 <img className={s.cartImg} src={cart} alt="cart" />
                 <span className={s.count}>{count}</span>
                 <div className={s.cartInfo}>

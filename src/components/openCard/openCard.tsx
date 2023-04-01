@@ -17,9 +17,9 @@ const OpenCard:React.FC<IOpenCard> = ({introStatus,speci,setIntroStatus,setSpeci
     return(
         <div className={s.container}>
             <nav className={s.navigation}>
-                <Link to='/'>Главная</Link>
-                <Link to='/catalog'>Каталог</Link>
-                <Link to={`/catalog/${barcode}`} className={s.linkA}>{name}</Link>
+                <Link to='/sultanReactApp/'>Главная</Link>
+                <Link to='/sultanReactApp/catalog'>Каталог</Link>
+                <Link to={`/sultanReactApp/catalog/${barcode}`} className={s.linkA}>{name}</Link>
             </nav>
             <div className={s.card}>
                 <div className={s.imgCont}>

@@ -14,14 +14,14 @@ const Static =()=>{
     
     return(
         <>
-            <img className={s.logo} src={logo} alt="LOGO" />
-            <Link to='/catalog' className={s.catalog}>Каталог <img src={sq} alt="sq" /></Link>
+            <Link to='/sultanReactApp'><img className={s.logo} src={logo} alt="LOGO" /></Link>
+            <Link to='/sultanReactApp/catalog' className={s.catalog}>Каталог <img src={sq} alt="sq" /></Link>
             <div className={s.search}><input type="text" placeholder='Поиск...'/> <img src={search} alt="search" /></div>
             <div className={s.contact}>
                 <div className={s.contactInfo}>
                 <p className={s.number}>+7 (777) 490-00-91</p>
                 <p className={s.time}>время работы: 9:00-20:00</p>
-                <Link to='/'>Заказать звонок</Link>
+                <Link to='/sultanReactApp/'>Заказать звонок</Link>
                 </div>
                 <img src={photo} alt="photoPers" />
             </div>
@@ -31,7 +31,7 @@ const Static =()=>{
             </button>
             <div className={s.adapive}>
 
-                <Link to='/catalog' className={s.sqContainer}>
+                <Link to='/sultanReactApp/catalog' className={s.sqContainer}>
                     <img src={blackSQ} alt="sq" />
                     <p className={s.adaptivCatalog}>Каталог</p>
                 </Link>

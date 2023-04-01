@@ -1,3 +1,4 @@
+import { dataDef } from './../../default/default';
 import { costParam } from './../../types/card.d';
 import {  } from './cardsSlice';
 import { ICardStatic, IFetchCards, IManuf, ISetCheck, ISortCards } from '../../types/card';
@@ -17,7 +18,8 @@ export interface CardState {
   order:string,
   chosenItem:string,
   maxCost:number,
-  minCost:number
+  minCost:number,
+  pagMaxLength:number
 }
 //динамические карточки (с параметрами)
 export const fetchCards =createAsyncThunk<ICardStatic[],IFetchCards[] >(
@@ -60,7 +62,8 @@ cardsTotal:[],
 order:'asc',
 chosenItem:'cost',
 maxCost:Infinity,
-minCost:0
+minCost:0,
+pagMaxLength:0
 
 } as CardState
 
@@ -112,8 +115,20 @@ export const cartSlice = createSlice({
      }
      )
      builder.addCase(fetchTotalCards.fulfilled,(state,action)=>{
+      //если пустo
+      if(action.payload.length===0||action.payload.length===1){
+        for(let i = 0 ; i<dataDef.length;i++){
+          fetch('https://62dfc3bd976ae7460bf328c3.mockapi.io/cards', {
+            method: 'POST',
+            headers: {'content-type':'application/json'},
+            // Send your data in the request body as JSON
+            body:JSON.stringify(dataDef[i])
+          })
+        }
+      }
       state.cardsTotal = action.payload
       state.paginationLength= state.cardsTotal.length
+      state.pagMaxLength = state.cardsTotal.length
       //группируем по производителю
       state.manufactures=action.payload.reduce((acc:IManuf[], curr) => {
         const found = acc.find(item => item.manuf === curr.manuf);
@@ -124,6 +139,7 @@ export const cartSlice = createSlice({
         }
         return acc;
       }, []); 
+
       
      })
      builder.addCase(fetchTypeCards.fulfilled,(state,action)=>{

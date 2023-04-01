@@ -1,8 +1,12 @@
 import s from './admin.module.scss'
 import {useState} from 'react'
 import gif from '../../assets/loading.gif'
+import { useDispatch } from 'react-redux'
+import { fetchTotalCards } from '../../store/Slices/cardsSlice'
 
 const AdminNewCard = () =>{
+    const dispatch = useDispatch() 
+
     const [introCard,setIntroCard] = useState('')
     const [nameCard,setNameCard] = useState('')
     const [sizeTypeCard,setSizeTypeCard] = useState('')
@@ -38,6 +42,7 @@ const AdminNewCard = () =>{
         }).then(res => {
           if (res.ok) {
             setLoader(true)
+            dispatch(fetchTotalCards())
               return res.json();
           }
           // handle error

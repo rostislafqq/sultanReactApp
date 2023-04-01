@@ -17,7 +17,7 @@ const CartContainer = () =>{
         intro={v.intro} count={v.count}
         />
         </>):<h1 className={s.empty}>Пусто😔</h1>}
-        {cards.length>0?<Link className={s.footerLink} to='/cart/formalize'>Оформить заказ</Link>:''}
+        {cards.length>0?<Link className={s.footerLink} to='/sultanReactApp/cart/formalize'>Оформить заказ</Link>:''}
         </>
     )
 }

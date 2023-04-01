@@ -9,7 +9,6 @@ import { RootState } from "../../../store/store"
 import {useState,useEffect} from 'react'
 import { fetchTypeCards, setSort } from "../../../store/Slices/cardsSlice"
 import arrowAd from '../../../assets/arrowAdaptive.svg'
-import { setBurger } from "../../../store/Slices/burger"
 
 const CatalogHeader = ()=>{
     const dispatch = useDispatch()
@@ -44,8 +43,8 @@ const CatalogHeader = ()=>{
         <div className={s.container}>
             
             <nav>
-                <Link to='/' >Главная</Link>
-                <Link to='/'className={s.active}>Косметика и гигиена</Link>
+                <Link to='/sultanReactApp/' >Главная</Link>
+                <Link to='/sultanReactApp/'className={s.active}>Косметика и гигиена</Link>
             </nav>
             <div className={s.headerContainer}>
                 <h1 className={s.header}>Косметика и гигиена</h1>

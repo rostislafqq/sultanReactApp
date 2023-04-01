@@ -13,7 +13,7 @@ const Accept:React.FC<PropsAccept> = ({active,acceptMe}) =>{
         <div className={active?'':s.wrapper}>
             <div className={s.overlay}>
             <div className={s.container}>
-            <Link to='/' ><img onClick={()=>{
+            <Link to='/sultanReactApp/' ><img onClick={()=>{
                 acceptMe()
             }} src={x} alt='x' className={s.mark}/></Link>
             <div className={s.intro}>

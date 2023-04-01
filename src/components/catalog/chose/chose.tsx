@@ -1,5 +1,4 @@
 import s from './chose.module.scss'
-import {useState} from 'react'
 
 interface ChoseProps {
     choseItem:string,

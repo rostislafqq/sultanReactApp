@@ -5,9 +5,9 @@ const FormHeader = () =>{
     return(
         <div className={s.container}>
             <nav className={s.nav}>
-                <Link to='/'>Главная</Link>
-                <Link to='/cart'>Корзина</Link>
-                <Link className={s.active} to='/cart/formalize'>Оформление заказа</Link>
+                <Link to='/sultanReactApp/'>Главная</Link>
+                <Link to='/sultanReactApp/cart'>Корзина</Link>
+                <Link className={s.active} to='/sultanReactApp/cart/formalize'>Оформление заказа</Link>
             </nav>
             <h1 className={s.header}>Оформление заказа</h1>
         </div>

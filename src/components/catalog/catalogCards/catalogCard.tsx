@@ -14,7 +14,7 @@ const CatalogCard:React.FC<IOncklickAddCart> = ({intro,name,sizeType,barcode,man
     //burger 
     const burgerActive = useSelector((state:RootState)=>state.burger.burgerActive)
     return(
-        <Link to={`/catalog/${barcode}`} className={window.innerWidth<=650&&!burgerActive?s.none:s.card}>
+        <Link to={`/sultanReactApp/catalog/${barcode}`} className={window.innerWidth<=650&&!burgerActive?s.none:s.card}>
             <img className={s.mainIMG} src={img} alt="tovar" />
             <img src={sizeType === 'g' ? box:bottle} alt="size" />
             <span className={s.size}>{size}</span>
@@ -46,3 +46,4 @@ const CatalogCard:React.FC<IOncklickAddCart> = ({intro,name,sizeType,barcode,man
 }
 
 export default CatalogCard
+

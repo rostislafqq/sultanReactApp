@@ -6,8 +6,8 @@ const CartHeader =()=>{
     return(
         <div className={s.container}>
             <nav className={s.nav}>
-                <Link to='/'>Главная</Link>
-                <Link className={s.active} to='/cart'>Корзина</Link>
+                <Link to='/sultanReactApp/'>Главная</Link>
+                <Link className={s.active} to='/sultanReactApp/cart'>Корзина</Link>
             </nav>
             <h1 className={s.header}>Корзина</h1>
         </div>

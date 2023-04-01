@@ -51,12 +51,12 @@ function App() {
       <Header/>
     <main className={s.container}>
      <Routes>
-        <Route path='/' element={<Navigate to='/catalog'/>}/>
-        <Route path="/catalog" element={<Catalog />} />
-        <Route path='/catalog/:barcode' element={<OpenCardContainer />}/>
-        <Route path='/cart' element={<CartContainer />}/>
-        <Route path='/cart/formalize' element={<FormalizeContainer/>}/>
-        <Route path='/admin' element={<AdminContainer />}/>
+        <Route path='*' element={<Navigate to='/sultanReactApp/catalog'/>}/>
+        <Route path="/sultanReactApp/catalog" element={<Catalog />} />
+        <Route path='/sultanReactApp/catalog/:barcode' element={<OpenCardContainer />}/>
+        <Route path='/sultanReactApp/cart' element={<CartContainer />}/>
+        <Route path='/sultanReactApp/cart/formalize' element={<FormalizeContainer/>}/>
+        <Route path='/sultanReactApp/admin' element={<AdminContainer />}/>
     </Routes> 
       </main>
       <Footer />

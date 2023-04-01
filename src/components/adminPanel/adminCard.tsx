@@ -48,7 +48,7 @@ const AdminCard:React.FC<ICardStatic> = ({id,types,intro,name,sizeType,barcode,m
 
     const deleteCard = () =>{
         if(id!==undefined)
-        fetch(`https://62dfc3bd976ae7460bf328c3.mockapi.io/cards`, {
+        fetch(`https://62dfc3bd976ae7460bf328c3.mockapi.io/cards/${id+1}`, {
         method: 'DELETE',
         }).then(res => {
           if (res.ok) {

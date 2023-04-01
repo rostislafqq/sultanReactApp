@@ -22,7 +22,7 @@ const Order =() =>{
                 <p className={s.result}>ИТОГО</p>
                 <p className={s.result}>{total} ₸</p>
             </div>
-            <Link className={s.link} to='/cart'>Редактировать заказ <img className={s.pencil} src={pencil} alt="pencil" /></Link>
+            <Link className={s.link} to='/sultanReactApp/cart'>Редактировать заказ <img className={s.pencil} src={pencil} alt="pencil" /></Link>
         </div>
     )
 }
