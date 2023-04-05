@@ -9,7 +9,7 @@ import { fetchCards, fetchTotalCards } from './store/Slices/cardsSlice';
 import type {} from 'redux-thunk/extend-redux';
 import { RootState } from './store/store';
 import { useSelector } from 'react-redux';
-import { setPopUp } from './store/Slices/popUp';
+import { setPopUp } from './store/Slices/popUpSlice';
 import OpenCardContainer from './components/openCard/openCardContainer';
 import CartContainer from './components/cart/cartContainer';
 import FormalizeContainer from './components/formalize/formalizeContainer';
@@ -49,15 +49,15 @@ function App() {
       dispatch(setPopUp(false))
     }} className={s.modul}>
       <Header/>
-    <main className={s.container}>
-     <Routes>
-        <Route path='*' element={<Navigate to='/sultanReactApp/catalog'/>}/>
-        <Route path="/sultanReactApp/catalog" element={<Catalog />} />
-        <Route path='/sultanReactApp/catalog/:barcode' element={<OpenCardContainer />}/>
-        <Route path='/sultanReactApp/cart' element={<CartContainer />}/>
-        <Route path='/sultanReactApp/cart/formalize' element={<FormalizeContainer/>}/>
-        <Route path='/sultanReactApp/admin' element={<AdminContainer />}/>
-    </Routes> 
+      <main className={s.container}>
+       <Routes>
+          <Route path='*' element={<Navigate to='/sultanReactApp/catalog'/>}/>
+          <Route path="/sultanReactApp/catalog" element={<Catalog />} />
+          <Route path='/sultanReactApp/catalog/:barcode' element={<OpenCardContainer />}/>
+          <Route path='/sultanReactApp/cart' element={<CartContainer />}/>
+          <Route path='/sultanReactApp/cart/formalize' element={<FormalizeContainer/>}/>
+          <Route path='/sultanReactApp/admin' element={<AdminContainer />}/>
+       </Routes> 
       </main>
       <Footer />
     </div>

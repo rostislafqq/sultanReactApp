@@ -1,11 +1,14 @@
-import s from './admin.module.scss'
+import s from '../admin.module.scss'
 import {useState} from 'react'
-import gif from '../../assets/loading.gif'
-import { useDispatch } from 'react-redux'
-import { fetchTotalCards } from '../../store/Slices/cardsSlice'
+import gif from '../../../assets/loading.gif'
+import { ICardStatic } from '../../../types/card'
 
-const AdminNewCard = () =>{
-    const dispatch = useDispatch() 
+interface PropsNewCard{
+    loadedNew:boolean,
+    addNewCard:(updateTask: ICardStatic) => void
+}
+
+const AdminNewCard:React.FC<PropsNewCard> = ({loadedNew,addNewCard}) =>{ 
 
     const [introCard,setIntroCard] = useState('')
     const [nameCard,setNameCard] = useState('')
@@ -18,41 +21,10 @@ const AdminNewCard = () =>{
     const [sizeCard, setSizeCard] = useState('')
     const [typesCard,setTypesCard] = useState('')
 
-    const [ loaded, setLoader] = useState(true)
-
-    const addNew =()=>{
-        setLoader(false)
-        const updateTask = {
-            name: nameCard,
-            size: sizeCard,
-            sizeType: sizeTypeCard,
-            barcode: barcodeCard,
-            manuf: manufCard,
-            brand: brandCard,
-            cost: costCard,
-            types: typesCard.split(','),
-            img: imgCard,
-            intro: introCard,
-          };
-        fetch('https://62dfc3bd976ae7460bf328c3.mockapi.io/cards', {
-          method: 'POST',
-          headers: {'content-type':'application/json'},
-          // Send your data in the request body as JSON
-          body: JSON.stringify(updateTask)
-        }).then(res => {
-          if (res.ok) {
-            setLoader(true)
-            dispatch(fetchTotalCards())
-              return res.json();
-          }
-          // handle error
-        })
-    }
-
     return(
         (
             <>
-                {loaded?
+                {loadedNew?
                 <>
                 
             <h3 className={s.addNewH}> Добавить новый товар</h3>
@@ -128,7 +100,18 @@ const AdminNewCard = () =>{
          
          <div className={s.btnContaier}>
          <button onClick={()=>{
-            addNew()
+            addNewCard({
+                name: nameCard,
+                size: sizeCard,
+                sizeType: sizeTypeCard,
+                barcode: barcodeCard,
+                manuf: manufCard,
+                brand: brandCard,
+                cost: costCard,
+                types: typesCard.split(','),
+                img: imgCard,
+                intro: introCard,
+            })
          }} className={s.btn}>Добавить новый товар</button>
         
          </div>

@@ -6,7 +6,7 @@ import s from './header.module.scss'
 import { RootState } from '../../store/store'
 import { useDispatch } from 'react-redux'
 import { useCallback } from 'react'
-import { setBurger } from '../../store/Slices/burger'
+import { setBurger } from '../../store/Slices/burgerSlice'
 
 const Header =()=>{
     const cost = useSelector((state:RootState)=> state.cart.totalCost)
@@ -17,7 +17,7 @@ const Header =()=>{
     const toggleBurger = useCallback(()=>{
         dispatch(setBurger(!burgerActive))
     },[dispatch,burgerActive])
-    console.log(window.innerWidth )
+
     return(
         <header className={s.container}>
             <Contacts />

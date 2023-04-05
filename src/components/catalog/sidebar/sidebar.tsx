@@ -17,11 +17,13 @@ interface PropsSidebar{
     costMin:number,
     costMax:number,
     setCostMin:React.Dispatch<React.SetStateAction<number>>,
-    setCostMax:React.Dispatch<React.SetStateAction<number>>
+    setCostMax:React.Dispatch<React.SetStateAction<number>>,
+     
 }
 
 const Sidebar:React.FC<PropsSidebar > =({costMin,setCostMin,setCostMax,costMax,show,manufFinter,manufRender,inputManuf,setInputManuf})=>{
    const dispatch = useDispatch()
+
    //burger 
    const burgerActive = useSelector((state:RootState)=>state.burger.burgerActive)
     return(
@@ -52,9 +54,9 @@ const Sidebar:React.FC<PropsSidebar > =({costMin,setCostMin,setCostMax,costMax,s
             
             <div className={s.manufCheckContainer}>
                 {
-                    manufRender.length>0?manufRender.map((v)=>
+                    manufRender.map((v)=>
                     <Checkbox key={v.manuf} checked={v.checked} manuf={v.manuf} count={v.count}/>)
-                    :''
+                  
                 }
             </div>
             <div className={s.showContainer}>
@@ -64,6 +66,7 @@ const Sidebar:React.FC<PropsSidebar > =({costMin,setCostMin,setCostMax,costMax,s
             <span><img onClick={()=>{
                 setInputManuf('')
                 dispatch(deleteManufParam())
+           
             }} className={s.bin} src={bin} alt="bin" /></span> 
             </div>
             <div onClick={()=>{

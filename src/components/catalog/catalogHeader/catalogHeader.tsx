@@ -3,7 +3,7 @@ import s from './catalogHeader.module.scss'
 import arrow from '../../../assets/arrow.svg'
 import PopUp from "./popUp"
 import { useDispatch } from "react-redux"
-import  { setPopUp } from "../../../store/Slices/popUp"
+import  { setPopUp } from "../../../store/Slices/popUpSlice"
 import { useSelector } from "react-redux"
 import { RootState } from "../../../store/store"
 import {useState,useEffect} from 'react'

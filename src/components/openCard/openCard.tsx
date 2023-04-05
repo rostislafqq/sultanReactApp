@@ -7,7 +7,7 @@ import { IOpenCard } from '../../types/card'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import cart from '../../assets/cartWhite.svg'
-import { addCardStore, setTotalCost } from '../../store/Slices/cart'
+import { addCardStore, setTotalCost } from '../../store/Slices/cartSlice'
 
 
 const OpenCard:React.FC<IOpenCard> = ({introStatus,speci,setIntroStatus,setSpeci,name,size,sizeType,barcode,manuf,brand,cost,intro,img})=>{

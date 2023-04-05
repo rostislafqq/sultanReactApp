@@ -6,7 +6,7 @@ import FormHeader from "./formHeader/formHeader"
 import Accept from "./accept/accept"
 import { useCallback, useState } from "react"
 import { useDispatch } from "react-redux"
-import { deliteAllCart, setTotalCost } from "../../store/Slices/cart"
+import { deliteAllCart, setTotalCost } from "../../store/Slices/cartSlice"
 
 const FormalizeContainer =() =>{
     //модалка

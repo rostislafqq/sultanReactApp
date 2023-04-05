@@ -1,8 +1,8 @@
-import popUp  from './Slices/popUp';
+import popUp  from './Slices/popUpSlice';
 import { configureStore } from '@reduxjs/toolkit'
 import cards  from './Slices/cardsSlice'
-import cart from './Slices/cart'
-import burger from './Slices/burger'
+import cart from './Slices/cartSlice'
+import burger from './Slices/burgerSlice'
 
 
 export const store = configureStore({

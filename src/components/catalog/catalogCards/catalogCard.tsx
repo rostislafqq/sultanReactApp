@@ -4,7 +4,7 @@ import box from '../../../assets/box.svg'
 import cart from '../../../assets/cartWhite.svg'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { addCardStore, setTotalCost } from '../../../store/Slices/cart'
+import { addCardStore, setTotalCost } from '../../../store/Slices/cartSlice'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store/store'
 

@@ -3,7 +3,7 @@ import bottle from '../../../assets/bottle.svg'
 import box from '../../../assets/box.svg'
 import bin from '../../../assets/bin.svg'
 import { useDispatch } from 'react-redux'
-import { deliteItem, plusCount, removeCount, setTotalCost } from '../../../store/Slices/cart'
+import { deliteItem, plusCount, removeCount, setTotalCost } from '../../../store/Slices/cartSlice'
 import { Link } from 'react-router-dom'
 
 const CartGoods:React.FC<ICardsCart> = ({barcode,img,size,sizeType,name,intro,count,cost})=>{

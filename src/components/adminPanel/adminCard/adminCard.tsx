@@ -1,9 +1,14 @@
 import { useState } from 'react'
-import { ICardStatic } from '../../types/card'
-import s from './admin.module.scss'
-import gif from '../../assets/loading.gif'
+import { ICardStatic } from '../../../types/card'
+import s from '../admin.module.scss'
+import gif from '../../../assets/loading.gif'
 
-const AdminCard:React.FC<ICardStatic> = ({id,types,intro,name,sizeType,barcode,manuf,img,brand,cost,size})=>{
+interface AdminCardProps {
+    updateCard:(updateTask: ICardStatic, id: any) => void,
+    loadUpdate:boolean
+}
+
+const AdminCard:React.FC<ICardStatic &AdminCardProps> = ({updateCard,loadUpdate,id,types,intro,name,sizeType,barcode,manuf,img,brand,cost,size})=>{
     const [introCard,setIntroCard] = useState(intro)
     const [nameCard,setNameCard] = useState(name)
     const [sizeTypeCard,setSizeTypeCard] = useState(sizeType)
@@ -15,36 +20,7 @@ const AdminCard:React.FC<ICardStatic> = ({id,types,intro,name,sizeType,barcode,m
     const [sizeCard, setSizeCard] = useState(size)
     const [typesCard,setTypesCard] = useState(types.join(','))
 
-    const [load,setLoad] = useState(true)
     const [delited , setDelited] = useState(false)
-
-    const updateCard =  ()=>{
-        setLoad(false)
-        const updateTask = {
-            name: nameCard,
-            size: sizeCard,
-            sizeType: sizeTypeCard,
-            barcode: barcodeCard,
-            manuf: manufCard,
-            brand: brandCard,
-            cost: costCard,
-            types: typesCard.split(','),
-            img: imgCard,
-            intro: introCard,
-          };
-        if(id!==undefined){
-        fetch(`https://62dfc3bd976ae7460bf328c3.mockapi.io/cards/${id+1}`, {
-        method: 'PUT', // or PATCH
-        headers: {'content-type':'application/json'},
-        body: JSON.stringify(updateTask)
-}).then(res => {
-  if (res.ok) {
-      setLoad(true)
-      return res.json();
-  }
-  // handle error
-})}
-}
 
     const deleteCard = () =>{
         if(id!==undefined)
@@ -53,6 +29,7 @@ const AdminCard:React.FC<ICardStatic> = ({id,types,intro,name,sizeType,barcode,m
         }).then(res => {
           if (res.ok) {
             setDelited(true)
+            
             return res.json(); 
           }
 
@@ -62,7 +39,7 @@ const AdminCard:React.FC<ICardStatic> = ({id,types,intro,name,sizeType,barcode,m
     return(
         
         <>
-        {load? <div className={delited?s.none:s.card}>
+        {loadUpdate? <div className={delited?s.none:s.card}>
                     <div className={s.first}>
                     <div className={s.commonBlock}>
                         <h3 className={s.commonHeader}>Название товара</h3>
@@ -133,8 +110,17 @@ const AdminCard:React.FC<ICardStatic> = ({id,types,intro,name,sizeType,barcode,m
                    
                    <div className={s.btnContaier}>
                    <button onClick={()=>{
-                        updateCard()
-                    }} className={s.btn}>обновить</button>
+                        updateCard({ name: nameCard,
+                                    size: sizeCard,
+                                    sizeType: sizeTypeCard,
+                                    barcode: barcodeCard,
+                                    manuf: manufCard,
+                                    brand: brandCard,
+                                    cost: costCard,
+                                    types: typesCard.split(','),
+                                    img: imgCard,
+                                    intro: introCard,
+                    }, id )}} className={s.btn}>обновить</button>
                     <button onClick={()=>{
                         deleteCard()
                     }} className={s.delit}>удалить</button>

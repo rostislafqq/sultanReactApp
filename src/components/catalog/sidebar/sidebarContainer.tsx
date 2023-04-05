@@ -5,7 +5,7 @@ import { IManuf } from "../../../types/card"
 import {useCallback, useEffect, useState } from 'react'
 import { useDispatch } from "react-redux"
 import { setManufParam } from "../../../store/Slices/cardsSlice"
-import { setBurger } from "../../../store/Slices/burger"
+import { setBurger } from "../../../store/Slices/burgerSlice"
 
 const SidebarContainer =() =>{
     const dispatch = useDispatch()
@@ -25,9 +25,12 @@ const SidebarContainer =() =>{
       },
       [inputManuf,manufactures],
     )
+    //постоянное обновление состояния
     useEffect(()=>{
         setManufRender(manufactures)
     },[manufactures])
+
+
     //обнуляем
    useEffect(()=>{
     if(inputManuf.length===0){
@@ -47,7 +50,7 @@ const show =useCallback(()=>{
    },[dispatch,costMin,costMax])
    
     return(
-        <Sidebar costMin={costMin} costMax={costMax} setCostMin={setCostMin} setCostMax={setCostMax} show={show} manufFinter={manufFinter} inputManuf={inputManuf} setInputManuf={setInputManuf} manufRender={manufRender} />
+        <Sidebar  costMin={costMin} costMax={costMax} setCostMin={setCostMin} setCostMax={setCostMax} show={show} manufFinter={manufFinter} inputManuf={inputManuf} setInputManuf={setInputManuf} manufRender={manufRender} />
     )
 }
 
